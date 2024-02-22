@@ -8,7 +8,7 @@ public class Calculadora {
 	
 	
 	 // Método para calcular el resultado de una expresión postfix
-    private static int calcularExpresionPostfix(String expresionPostfix) {
+    static int calcularExpresionPostfix(String expresionPostfix) {
         Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < expresionPostfix.length(); i++) {
