@@ -6,7 +6,11 @@ import java.util.Stack;
 
 public class Calculadora {
 	
-	
+	/**
+    * Calcula el resultado de una expresión en notación postfix.
+    * @param expresionPostfix La expresión en notación postfix a calcular.
+    * @return El resultado de la evaluación de la expresión.
+    */
 	 // Método para calcular el resultado de una expresión postfix
     static int calcularExpresionPostfix(String expresionPostfix) {
         Stack<Integer> stack = new Stack<>();
@@ -37,7 +41,11 @@ public class Calculadora {
         return stack.pop();
     }
 
-    
+    /**
+     * Convierte una expresión infix a su equivalente en notación postfix.
+     * @param data La expresión en notación infix a convertir.
+     * @return La expresión convertida en notación postfix.
+     */
     
     public static String InfixAPostfix(String data) {
         String result = "";
@@ -70,7 +78,11 @@ public class Calculadora {
         return result;
     }
 
-    // Método para obtener la precedencia de un operador
+    /**
+ * Determina la precedencia entre operadores matemáticos.
+ * @param operador El operador cuya precedencia se quiere determinar.
+ * @return Un valor entero que representa la precedencia del operador.
+ */
     private static int precedencia(char operador) {
         switch (operador) {
             case '+':
@@ -84,7 +96,11 @@ public class Calculadora {
         }
     }
 
-    // Método para leer las expresiones desde un archivo y calcularlas
+    /**
+ * Lee expresiones matemáticas desde un archivo y calcula su resultado.
+ * @param archivo El nombre del archivo que contiene las expresiones matemáticas.
+ */
+
     public static void leerYCalcular(String archivo) {
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             String line;

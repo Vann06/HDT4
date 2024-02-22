@@ -1,3 +1,16 @@
+/**
+ * Clase principal para la calculadora de expresiones en notación postfix.
+ * Permite al usuario elegir entre diferentes estructuras de datos para evaluar
+ * expresiones matemáticas almacenadas en un archivo de texto.
+ * Algoritmos y Estructura de Datos
+ * Ricardo Godinez #23247
+ * Vianka Castro #23201
+ * 3 Semestre
+ * Departamento de Ciencias de la Computacion
+ * 
+ * 
+ */
+
 import java.util.Scanner;
 
 public class Main {
