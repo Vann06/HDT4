@@ -1,6 +1,8 @@
-package clases;
 
+
+import java.util.List;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Main {
         List<?> lista = null;
         while (true) {
         	
-            System.out.println("Bienvenido a la calculadora de postfix  :3333");
+            System.out.println("Bienvenido a la calculadora de postfix");
             System.out.println("Por favor seleccione una opcion");
             System.out.println("1. Para el uso de una lista simple");
             System.out.println("2. Para lista doblemente enlazada");
@@ -23,6 +25,7 @@ public class Main {
             if (opcion == 1 || opcion == 2) {
                 lista = DataStructureFactory.getList(opcion);
                 Calculadora.leerYCalcular("datos.txt");
+              
             }
             else if (opcion == 3 || opcion == 4) {
                 stack = DataStructureFactory.getStack(opcion);
